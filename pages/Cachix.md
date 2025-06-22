@@ -1,2 +1,3 @@
 - https://www.cachix.org/
+- https://docs.cachix.org/
 -
