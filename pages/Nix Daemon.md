@@ -1,1 +1,3 @@
-- A process that runs as `root`
+- A process that runs as `root` providing a safe shared nix installation.
+- The Daemon...
+	- is the only process that can write to
