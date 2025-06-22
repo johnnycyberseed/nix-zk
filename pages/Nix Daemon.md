@@ -1,3 +1,6 @@
 - A process that runs as `root` providing a safe shared nix installation.
 - The Daemon...
-	- is the only process that can write to
+	- is the only process that can write to [[Nix Store]]
+	- is given requests by the user via the [[nix CLI]]
+	-
+	-
