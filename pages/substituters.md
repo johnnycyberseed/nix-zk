@@ -1,6 +1,7 @@
 - a service (usually HTTP-based) that hosts pre-built binary artifacts.
 - Ensures only authorized and verified builds are used.
-- saves _hours_ of build time by providing a means of supplying pre-built
+- saves _hours_ of build time by providing a means of supplying pre-built dependencies (binaries, compilers, libraries, ...)
+-
 - ## Security
 	- [[substituters]] supply a public signing key
 	- it configured by the user in [[nix.conf]]
