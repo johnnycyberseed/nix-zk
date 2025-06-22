@@ -1,8 +1,11 @@
 - primarily the configuration file for the [[Nix Daemon]]
+-
 - it manages:
 	- which users are [[trusted users]]
 	- which are allowed [[substituters]]
 	- resource config
 	- sandboxing
 	- experimental features that are enabled (often [[Flakes]])
--
+- ## References
+	- https://nix.dev/manual/nix/latest/command-ref/conf-file.html
+	-
