@@ -1,3 +1,6 @@
-- Nix is configured in this order:
+- Nix is configured in this order (latter overriding former):
 	- /etc/nix/[[nix.conf]]
-	-
+	- /etc/nix/nix.custom.conf
+	- ~/.config/nix/nix.conf — user-level config
+	- CLI flags and environment variables
+-
