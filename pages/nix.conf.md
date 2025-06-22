@@ -1,0 +1,2 @@
+- primarily the configuration file for the [[Nix Daemon]]
+-
