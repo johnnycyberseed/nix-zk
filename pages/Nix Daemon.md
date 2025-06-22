@@ -4,6 +4,7 @@
 	- is given requests by the user via the [[nix CLI]]
 	-
 - Configuration
-	- `/etc/nix/nix.conf`
+	- `/etc/nix/nix.conf` — managed by the Determinate Nix installer; don't touch,
+	- `/etc/nix/nix.custom.conf` — place to put your customizations.
 	-
 	-
