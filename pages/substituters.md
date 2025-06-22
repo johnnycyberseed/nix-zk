@@ -1,5 +1,9 @@
 - a service (usually HTTP-based) that hosts pre-built binary artifacts.
 -
+- ## Security
+	- [[substituters]] supply a public signing key
+	-
+	-
 - ## Common Substituters
 	- https://cache.nixos.org — the official binary cache for [[Nixpkgs]]
 	- https://cache.nix.dev — a community cache (used by some open-source projects)
