@@ -1,0 +1,5 @@
+- a directory which has these files at the root:
+	- `flake.nix`
+	- [`flake.lock`](https://zero-to-nix.com/concepts/flakes#lockfile)
+- Outputs a [[Nix expression]]
+-
