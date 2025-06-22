@@ -2,11 +2,11 @@
 - The Daemon...
 	- is the only process that can write to [[Nix Store]]
 	- is given requests by the user via the [[nix CLI]]
-	-
+	- downloads pre-built binaries from caches ()
 - Configuration
 	- `/etc/nix/nix.conf` — managed by the Determinate Nix installer; don't touch,
 	- `/etc/nix/nix.custom.conf` — place to put your customizations.
-	-
+-
 	-
 - {{renderer :mermaid_68575bb0-cfea-4782-bd5f-69bc119bba8e, 6}}
 	- ```mermaid
