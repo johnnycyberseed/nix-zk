@@ -1,2 +1,7 @@
 - primarily the configuration file for the [[Nix Daemon]]
--
+- it manages:
+	- which users are [[trusted users]]
+	- which are allowed [[substituters]]
+	- resource config
+	- sandboxing
+	-
