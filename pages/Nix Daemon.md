@@ -8,7 +8,7 @@
 	- `/etc/nix/nix.custom.conf` — place to put your customizations.
 	-
 	-
-- {{renderer :mermaid_68575bb0-cfea-4782-bd5f-69bc119bba8e, 3}}
+- {{renderer :mermaid_68575bb0-cfea-4782-bd5f-69bc119bba8e, 6}}
 	- ```mermaid
 	  graph LR
 	    subgraph User Space
