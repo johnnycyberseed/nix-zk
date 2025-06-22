@@ -3,4 +3,7 @@
 	- is the only process that can write to [[Nix Store]]
 	- is given requests by the user via the [[nix CLI]]
 	-
+- Configuration
+	- `/etc/nix/nix.conf`
+	-
 	-
