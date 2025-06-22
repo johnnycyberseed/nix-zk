@@ -1,0 +1,3 @@
+- Nix is configured in this order:
+	- /etc/nix/[[nix.conf]]
+	-
