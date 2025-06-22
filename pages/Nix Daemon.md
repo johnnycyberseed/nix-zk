@@ -4,7 +4,7 @@
 	- is given requests by the user via the [[nix CLI]]
 	- downloads pre-built binaries from caches (e.g. https://cache.nixos.org)
 	- ensures only trusted [[substituters]] (as configured in [[nix.conf]]) are used.
-	-
+	- ensures only [[trusted users]] are allowed to perform privileged operations.
 	-
 - Configuration
 	- /etc/nix/[[nix.conf]] — managed by the Determinate Nix installer; don't touch,
