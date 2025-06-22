@@ -1,0 +1,3 @@
+- `/nix/store`
+- where all the nix artifacts live
+-
