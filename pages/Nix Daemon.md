@@ -12,7 +12,7 @@
 	- ```mermaid
 	  graph LR
 	    subgraph User Space
-	      A["👤 User (e.g. johnnycyberseed)"]
+	      User["👤 User (e.g. johnnycyberseed)"]
 	      B["nix CLI (e.g. nix build/run/profile)"]
 	      B -->|request| D
 	    end
@@ -33,7 +33,7 @@
 	      K --> D
 	    end
 	  
-	    A -->|runs| B
+	    User -->|runs| B
 	    G -->|symlinks| L["~/.nix-profile"]
 	  ```
 	-
