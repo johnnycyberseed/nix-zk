@@ -7,9 +7,8 @@
 	- ensures only [[trusted users]] are allowed to perform privileged operations.
 	- performs compilation and evaluation of packages
 	- parallelizes builds
-- Is configured via [[nix Configuration]] Configuration
-	- /etc/nix/[[nix.conf]] — managed by the Determinate Nix installer; don't touch,
-	- `/etc/nix/nix.custom.conf` — place to put your customizations.
+- Is configured via {{embed [[nix Configuration]]}}
+-
 -
 	-
 - {{renderer :mermaid_68575bb0-cfea-4782-bd5f-69bc119bba8e, 6}}
