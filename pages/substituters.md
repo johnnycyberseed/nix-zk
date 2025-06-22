@@ -3,4 +3,7 @@
 - ## Common Substituters
 	- https://cache.nixos.org — the official binary cache for [[Nixpkgs]]
 	- https://cache.nix.dev — a community cache (used by some open-source projects)
-	- https://*.cachix.org — Cachix user- and or-hosted caches
+	- https://*.cachix.org — [[Cachix]] user- and or-hosted caches
+	- https://install.determinate.systems — Determinate nix tools
+	-
+	-
