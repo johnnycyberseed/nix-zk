@@ -1,5 +1,5 @@
 - Nix is configured in this order (latter overriding former):
-	- /etc/nix/[[nix.conf]]
+	- /etc/nix/[[nix.conf]]  — managed by the Determinate Nix installer; don't touch,
 	- /etc/nix/nix.custom.conf
 	- ~/.config/nix/nix.conf — user-level config
 	- CLI flags and environment variables
