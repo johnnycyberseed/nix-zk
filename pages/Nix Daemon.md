@@ -12,28 +12,28 @@
 	- ```mermaid
 	  graph LR
 	    subgraph User Space
-	      A[👤 User (e.g. johnnycyberseed)]
-	      B[nix CLI<br>(e.g. nix build/run/profile)]
+	      A["👤 User (e.g. johnnycyberseed)"]
+	      B["nix CLI (e.g. nix build/run/profile)"]
 	      B -->|request| D
 	    end
 	  
 	    subgraph System Space
-	      D[nix-daemon<br>Runs as root or nixbld]
-	      D -->|evaluates| E[Nix Expression / Flake]
-	      E --> F[Build Derivation]
-	      F --> G[/nix/store<br>(immutable store)]
-	      F --> H[Build Sandbox<br>(isolated env)]
-	      D -->|fetch| I[Substituters<br>(e.g. cache.nixos.org, Cachix)]
+	      D["nix-daemon Runs as root or nixbld"]
+	      D -->|evaluates| E["Nix Expression / Flake"]
+	      E --> F["Build Derivation"]
+	      F --> G["/nix/store (immutable store)"]
+	      F --> H["Build Sandbox (isolated env)"]
+	      D -->|fetch| I["Substituters (e.g. cache.nixos.org, Cachix)"]
 	    end
 	  
 	    subgraph Config Files
-	      J[/etc/nix/nix.conf]
-	      K[/etc/nix/nix.custom.conf]
+	      J["/etc/nix/nix.conf"]
+	      K["/etc/nix/nix.custom.conf"]
 	      J --> D
 	      K --> D
 	    end
 	  
 	    A -->|runs| B
-	    G -->|symlinks| L[~/.nix-profile]
+	    G -->|symlinks| L["~/.nix-profile"]
 	  ```
 	-
