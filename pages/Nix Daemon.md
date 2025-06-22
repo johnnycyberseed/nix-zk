@@ -13,27 +13,27 @@
 	  graph LR
 	    subgraph User Space
 	      User["👤 User (e.g. johnnycyberseed)"]
-	      B["nix CLI (e.g. nix build/run/profile)"]
-	      B -->|request| D
+	      CLI["nix CLI (e.g. nix build/run/profile)"]
+	      CLI -->|request| Daemon
 	    end
 	  
 	    subgraph System Space
-	      D["nix-daemon Runs as root or nixbld"]
-	      D -->|evaluates| E["Nix Expression / Flake"]
-	      E --> F["Build Derivation"]
-	      F --> G["/nix/store (immutable store)"]
-	      F --> H["Build Sandbox (isolated env)"]
-	      D -->|fetch| I["Substituters (e.g. cache.nixos.org, Cachix)"]
+	      Daemon["nix-daemon Runs as root or nixbld"]
+	      Daemon -->|evaluates| Expr["Nix Expression / Flake"]
+	      Expr --> Derivation["Build Derivation"]
+	      Derivation --> Store["/nix/store (immutable store)"]
+	      Derivation --> Sandbox["Build Sandbox (isolated env)"]
+	      Daemon -->|fetch| I["Substituters (e.g. cache.nixos.org, Cachix)"]
 	    end
 	  
 	    subgraph Config Files
-	      J["/etc/nix/nix.conf"]
-	      K["/etc/nix/nix.custom.conf"]
-	      J --> D
-	      K --> D
+	      NixConf["/etc/nix/nix.conf"]
+	      NixCustomConf["/etc/nix/nix.custom.conf"]
+	      NixConf --> Daemon
+	      NixCustomConf --> Daemon
 	    end
 	  
-	    User -->|runs| B
-	    G -->|symlinks| L["~/.nix-profile"]
+	    User -->|runs| CLI
+	    Store -->|symlinks| Profile["~/.nix-profile"]
 	  ```
 	-
