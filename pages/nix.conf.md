@@ -2,7 +2,7 @@
 -
 - it manages:
 	- which users are [[trusted users]]
-	- which are allowed [[substituters]]
+	- which sources are allowed [[substituters]]
 	- resource config
 	- sandboxing
 	- experimental features that are enabled (often [[Flakes]])

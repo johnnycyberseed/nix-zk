@@ -1,8 +1,9 @@
 - a service (usually HTTP-based) that hosts pre-built binary artifacts.
+- Ensures only authorized and verified builds are used.
 -
 - ## Security
 	- [[substituters]] supply a public signing key
-	-
+	- it configured by the user in [[nix.conf]]
 	-
 - ## Common Substituters
 	- https://cache.nixos.org — the official binary cache for [[Nixpkgs]]
