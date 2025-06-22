@@ -1,0 +1,1 @@
+- a service (usually HTTP-based) that hosts pre-built binary artifacts.
